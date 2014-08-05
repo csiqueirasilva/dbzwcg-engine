@@ -22,7 +22,7 @@ class PersonalityCardDAO {
         this.cf = new ConnectionFactory();
     }
     
-    void convertSourceCardToPersonalityCard(Integer id, List<String> powerStages, AlignmentType alignment, Integer PUR, Integer level) {
+    void convertSourceCardToPersonalityCard(Integer id, List<String> powerStages, AlignmentType alignment, String PUR, Integer level) {
         SourceCard c = SourceCardDLO.getSourceCardById(id);
         PersonalityCard p = new PersonalityCard();
 

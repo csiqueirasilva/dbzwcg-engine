@@ -60,6 +60,10 @@ public class UserDLO {
         return email;
     }
     
+    public static User getUserFromId (Integer id) {
+        return new UserDAO().getUserFromId(id);
+    }
+    
     public static CustomUserDetails getAuthUserDetails(String username) {
         CustomUserDetails cud = new UserDAO().getUserDetails(username);
         return cud;
@@ -74,7 +78,8 @@ public class UserDLO {
     }
  
     public static void main (String args[]) {
-        UserDLO.getAuthUserDetails("root@dbzwcg.com");
+        //UserDLO.getAuthUserDetails("root@dbzwcg.com");
+        UserDLO.getUserFromId(1);
         System.out.println(UserDLO.encodePassword("root"));
     }
     

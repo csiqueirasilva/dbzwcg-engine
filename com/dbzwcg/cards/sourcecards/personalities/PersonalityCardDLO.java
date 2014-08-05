@@ -16,7 +16,7 @@ public class PersonalityCardDLO {
     private PersonalityCardDLO() {
     }
     
-    public static void convertSourceCardToPersonalityCard(Integer id, List<String> powerStages, AlignmentType alignment, Integer PUR, Integer level) {
+    public static void convertSourceCardToPersonalityCard(Integer id, List<String> powerStages, AlignmentType alignment, String PUR, Integer level) {
         (new PersonalityCardDAO()).convertSourceCardToPersonalityCard(id, powerStages, alignment, PUR, level);
     }
 }

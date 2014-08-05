@@ -1,13 +1,9 @@
 package com.dbzwcg.cards.sourcecards.personalities;
 
 import com.dbzwcg.cards.sourcecards.SourceCard;
-import com.dbzwcg.cards.sourcecards.SourceCardDLO;
-import com.dbzwcg.services.sql.ConnectionFactory;
 import com.dbzwcg.tools.enums.EnumJsonSerializer;
 import com.dbzwcg.types.AlignmentType;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
@@ -51,14 +47,14 @@ public class PersonalityCard extends SourceCard {
         this.powerStages = powerStages;
     }
     
-    protected Integer PUR;
+    protected String PUR;
 
     @Column(name = "PUR")
-    public Integer getPUR() {
+    public String getPUR() {
         return this.PUR;
     }
 
-    public void setPUR(Integer PUR) {
+    public void setPUR(String PUR) {
         this.PUR = PUR;
     }
     

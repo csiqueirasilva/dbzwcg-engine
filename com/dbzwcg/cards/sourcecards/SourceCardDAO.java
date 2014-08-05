@@ -50,42 +50,42 @@ class SourceCardDAO {
         PersonalityCardDLO.convertSourceCardToPersonalityCard(112,
                 Arrays.asList("0", "2000", "2200", "2400", "2600", "2800", "3000", "3200", "3400", "3600", "3800"),
                 AlignmentType.ROGUE,
-                2,
+                "2",
                 1);
 
         // Convert VEGETA level 2
         PersonalityCardDLO.convertSourceCardToPersonalityCard(113,
                 Arrays.asList("0", "4200", "4700", "5200", "5700", "6200", "6700", "7200", "7700", "8200", "8700"),
                 AlignmentType.ROGUE,
-                4,
+                "4",
                 2);
 
         // Convert VEGETA level 3
         PersonalityCardDLO.convertSourceCardToPersonalityCard(114,
                 Arrays.asList("0", "9000", "10000", "11000", "12000", "13000", "14000", "15000", "16000", "17000", "18000"),
                 AlignmentType.ROGUE,
-                4,
+                "4",
                 3);
 
         // Convert GOKU level 1
         PersonalityCardDLO.convertSourceCardToPersonalityCard(109,
                 Arrays.asList("0", "500", "600", "700", "800", "900", "1000", "1100", "1200", "1300", "1400"),
                 AlignmentType.HERO,
-                1,
+                "1",
                 1);
 
         // Convert GOKU level 2
         PersonalityCardDLO.convertSourceCardToPersonalityCard(110,
                 Arrays.asList("0", "3200", "3700", "4200", "4700", "5200", "5700", "6200", "6700", "7200", "7700"),
                 AlignmentType.HERO,
-                2,
+                "2",
                 2);
 
         // Convert GOKU level 3
         PersonalityCardDLO.convertSourceCardToPersonalityCard(111,
                 Arrays.asList("0", "8000", "8500", "9000", "9500", "10000", "10500", "11000", "11500", "12000", "12500"),
                 AlignmentType.HERO,
-                3,
+                "3",
                 3);
         
     }

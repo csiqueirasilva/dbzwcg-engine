@@ -27,6 +27,19 @@ class UserDAO {
         this.cf.finish();
     }
 
+    User getUserFromId(Integer id) {
+        User u = null;
+        
+        try {
+            this.cf.start();
+            u = this.cf.getEntityManager().find(User.class, id);
+            this.cf.finish();
+        } catch (javax.persistence.NoResultException e) {
+        }
+        
+        return u;
+    }
+    
     User getUserFromUsername(String email) {
         User u = null;
 

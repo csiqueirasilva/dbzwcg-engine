@@ -4,17 +4,11 @@
  */
 package com.dbzwcg.players;
 
-import com.dbzwcg.cards.sourcecards.SourceCard;
 import com.dbzwcg.services.sql.ConnectionFactory;
 import com.dbzwcg.users.user.User;
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
